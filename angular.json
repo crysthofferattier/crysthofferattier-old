@@ -27,9 +27,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/sidebars.css",
+              "src/styles.css"          
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/sidebars.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,9 +97,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/sidebars.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/css/sidebars.css"
+            ]
           }
         }
       }
