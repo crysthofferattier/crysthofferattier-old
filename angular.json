@@ -27,8 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/sidebars.css",
-              "src/styles.css"          
+              "src/styles.css"
             ],
             "scripts": [
               "src/assets/js/sidebars.js"

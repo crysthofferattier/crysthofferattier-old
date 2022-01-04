@@ -1,12 +1,12 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css'],
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class SidebarComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   constructor() { }
 

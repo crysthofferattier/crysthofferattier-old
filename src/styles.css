@@ -1,8 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+
+      www.OnlineWebFonts.Com 
+      You must credit the author Copy this link on your web 
+      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+      OR
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+*/
+
+@font-face {
+    font-family: "Neue Haas Unica";
+    src: url("http://db.onlinewebfonts.com/t/7250d52844cced73ed70675d1b78c60c.eot");
+    src: url("http://db.onlinewebfonts.com/t/7250d52844cced73ed70675d1b78c60c.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/7250d52844cced73ed70675d1b78c60c.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/7250d52844cced73ed70675d1b78c60c.woff") format("woff"), url("http://db.onlinewebfonts.com/t/7250d52844cced73ed70675d1b78c60c.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/7250d52844cced73ed70675d1b78c60c.svg#Neue Haas Unica") format("svg");
+}
+
 body {
-  background-color: #141d2b;
-  color: #a4b1cd;
-  font-family: "Neue Haas Unica";
+    background-color: #141d2b;
+    color: #a4b1cd;
+    font-family: "Neue Haas Unica";
 }
 
 h1 {
@@ -10,7 +24,8 @@ h1 {
     font-weight: bold;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: white;
 }
 
