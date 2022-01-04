@@ -1,0 +1,75 @@
+<h1>0x02 - TTY Shell</h1>
+
+<h2>Shell Spawning</h2>
+
+<br /><br />
+
+<h3>Python</h3>
+<code>
+    python -c 'import pty; pty.spawn("/bin/sh")'
+    <br>
+    export TERM=xterm
+    <br>
+    Ctrl + Z
+    <br>
+    stty raw -echo; fg
+</code>
+<code>
+    import os
+    
+    os.system('/bin/bash')
+</code>
+
+<br /><br />
+
+<h3> Bash</h3>
+
+<code>
+/bin/sh -i
+</code>
+
+<br /><br />
+
+<h3>
+    Perl</h3>
+
+<code>
+
+perl —e 'exec "/bin/sh";'
+</code>
+<br>
+<code>
+exec "/bin/sh";
+</code>
+<br /><br />
+
+<h3>
+    Ruby</h3>
+
+<code>
+
+exec "/bin/sh"
+</code>
+<br /><br />
+
+<h3>
+    Lua</h3>
+
+<code>
+
+os.execute('/bin/sh')
+</code>
+<br /><br />
+
+<h3>
+    vi</h3>
+
+<code>
+
+:!bash
+</code>
+<br>
+<code>
+:set shell=/bin/bash:shell
+
+</code>

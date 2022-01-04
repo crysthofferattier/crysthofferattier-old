@@ -14,3 +14,9 @@ h2, h3 {
     color: white;
 }
 
+code {
+    font-family: "Neue Haas Unica";
+    font-size: large;
+    letter-spacing: 2.5px;
+    color: #9fef00;
+}

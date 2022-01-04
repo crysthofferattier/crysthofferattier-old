@@ -8,11 +8,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { CheatSheetComponent } from './cheat-sheet/cheat-sheet.component';
 import { HomeComponent } from './home/home.component';
 import { ReverseShellComponent } from './cheat-sheet/reverse-shell/reverse-shell.component';
+import { TtyShellComponent } from './cheat-sheet/tty-shell/tty-shell.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'cheat-sheet', component: CheatSheetComponent},
-  {path: 'reverse-shell', component: ReverseShellComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'cheat-sheet', component: CheatSheetComponent },
+  { path: 'reverse-shell', component: ReverseShellComponent },
+  { path: 'tty-shell', component: TtyShellComponent },
 ]
 
 @NgModule({
@@ -21,7 +24,8 @@ const routes: Routes = [
     SidebarComponent,
     CheatSheetComponent,
     HomeComponent,
-    ReverseShellComponent
+    ReverseShellComponent,
+    TtyShellComponent
   ],
   imports: [
     BrowserModule,
