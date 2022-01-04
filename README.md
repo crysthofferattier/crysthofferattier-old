@@ -9,9 +9,10 @@ A collection of awesome penetration testing and offensive cybersecurity resource
 book.hacktricks.xyz
 
 #### Learning
-Hack The Box - Academy 
 
-Desec Security 
+Hack The Box - Academy
+
+Desec Security
 
 eLearnSecurity
 
